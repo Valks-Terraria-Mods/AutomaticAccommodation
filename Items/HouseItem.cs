@@ -1,3 +1,4 @@
+using AutomaticAccommodation.UI;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -29,10 +30,11 @@ namespace AutomaticAccommodation.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
+			recipe.AddIngredient(ItemID.DirtBlock, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
-		}
+            HouseUI.visible = true;
+        }
 	}
 }
