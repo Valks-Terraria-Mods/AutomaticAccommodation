@@ -1,4 +1,5 @@
 using AutomaticAccommodation.UI;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -34,7 +35,11 @@ namespace AutomaticAccommodation.Items
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
+        }
+
+        public override void OnCraft(Recipe recipe) {
             HouseUI.visible = true;
         }
-	}
+
+    }
 }
