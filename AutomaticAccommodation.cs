@@ -19,10 +19,12 @@ namespace AutomaticAccommodation
 
         public override void Load()
         {
-            houseUI = new HouseUI();
-            houseUI.Activate();
-            userInterface = new UserInterface();
-            userInterface.SetState(houseUI);
+            if (!Main.dedServ) {
+                houseUI = new HouseUI();
+                houseUI.Activate();
+                userInterface = new UserInterface();
+                userInterface.SetState(houseUI);
+            }
         }
 
         public override void UpdateUI(GameTime gameTime)
