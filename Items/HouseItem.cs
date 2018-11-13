@@ -39,6 +39,7 @@ namespace AutomaticAccommodation.Items
 
         public override void OnCraft(Recipe recipe) {
             HouseUI.visible = true;
+            
         }
 
     }
