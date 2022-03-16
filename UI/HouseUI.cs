@@ -28,7 +28,7 @@ namespace AutomaticAccommodation.UI
             housePanel.OnMouseDown += new UIElement.MouseEvent(DragStart);
             housePanel.OnMouseUp += new UIElement.MouseEvent(DragEnd);
 
-            Texture2D buttonDeleteTexture = ModLoader.GetTexture("Terraria/UI/ButtonDelete");
+            Texture2D buttonDeleteTexture = ModContent.GetTexture("Terraria/UI/ButtonDelete");
             UIImageButton closeButton = new UIImageButton(buttonDeleteTexture);
             closeButton.Left.Set(140, 0f);
             closeButton.Top.Set(10, 0f);
